@@ -36,8 +36,9 @@ html,body{
     justify-content: space-between;
 }
 #nav #nav-part1{
-    height: 80px;
+    height: 85px;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 #nav-part1 svg{
     display: block;
@@ -95,7 +96,18 @@ html,body{
     width: 100%;
     background-color: gray;
     margin-top: 3vw;
-    /* overflow: hidden; */
+    /* margin-right: 3vw; */
+    overflow: hidden;
+    position: relative;
+}
+#video-container #video{
+ position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width : 100%;
+  height :100%;
+  object-fit :contain;
 }
 
 #video-container #play{
@@ -143,11 +155,47 @@ html,body{
     border-radius: 50px;
     position: absolute;
     z-index: 9;
-    background: palegoldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#page2-2{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+#page2-2 h1{
+     width: 70%;
+     font-size: 5vw;
+     padding: 3vw;
+     font-weight: 800;
+     font-family: futura;
+     line-height: 5vw;
+}
+#page2-2 #para{
+    padding: 2vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#elem1 .dets{
+    background: #d4efad;
+}
+#elem2 .dets{
+    background: #daabde;
+}
+#elem3 .dets{
+    background: #e1d5a8;
+}
+.dets h1{
+    text-transform: uppercase;
+    font-size: 1.3vw;
 }
 #page3{
     width: 100%;
-    min-height: 120vh;
+    min-height: 150vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -160,11 +208,149 @@ html,body{
     /* position: relative; */
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 .child img{
     height: 100%;
     scale: 1.2;
+}
+.child div{
+    font-weight: 100;
+    text-align: center;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.additional-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vw;
+    padding: 20px;
+    border-bottom: 2px solid rgba(49, 46, 46, 0.507);
+}
+
+#page4{
+    width: 100%;
+    min-height: 120vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 h1{
+    text-align: center;
+   font-size: 5vw;
+   font-family: futura;
+   padding-inline: 2.7em;
+   line-height: 5vw;
+}
+.msg-btn{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background: black;
+    color: white;
+    padding-inline: 50px;
+    padding-block: 25px;
+    text-transform: uppercase;
+    font-size: 1vw;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.msg-btn:hover{
+    color: rgba(255, 255, 255, 0.525);
+}
+
+#page5{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+#page5 #para{
+    padding: 2vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#para h1{
+    font-size: 2vw;
+    font-family: futura;
+}
+#para p{
+    margin-top: 1.5vw;
+}
+#para code{
+    cursor: pointer;
+    padding: 10px;
+    width: max-content;
+    margin-top: 2.5vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.486);
+}
+#imag-box{
+    width: 70%;
+    display: flex;
+    gap: 1rem;
+    padding: 30px;
+}
+#imag-box div{
+    overflow: hidden;
+}
+#imag-box div img{
+    width: 100%;
+    scale: 1.2;
+}
+
+#page6{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#page6 .connect-us:last-child{
+    text-align: end;
+}
+#page6 #footer{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer li{
+    margin-top: 10px;
+    font-size: 1.5vw;
+    list-style: none;
+}
+#footer svg{
+    height: 160px;
+}
+#navigation{
+    font-size: 1vw;
+    padding-top: 40px;
+    color: gray;
+    display: flex;
+    gap: 1rem;
+}
+#info{
+    text-align: center;
+    font-size: 1vw;
+    padding: 0vw 18vw;
+}
+#info p{
+    margin-top: 5vw;
+    line-height: 1.5vw;
 }
 
 @media screen and (max-width : 600px) {
